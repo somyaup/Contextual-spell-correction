@@ -1,6 +1,6 @@
 # NLP-based Sentence Transformer Spell Correction
 
-NLP-based Sentence Transformer Spell Correction is a code repository that provides a spell correction functionality using sentence transformers. It utilizes advanced natural language processing techniques to suggest possible corrections for misspelled words within sentences, enhancing the accuracy and fluency of textual inputs.
+NLP-based Sentence Transformer Spell Correction is a code repository that provides spell correction functionality using sentence transformers. It utilizes advanced natural language processing techniques to suggest possible corrections for misspelled words within sentences, enhancing the accuracy and fluency of textual inputs.
 
 ## Features
 
@@ -43,8 +43,9 @@ To incorporate the NLP-based Sentence Transformer Spell Correction code into you
 Once you have imported the `spell_corrector` module, you can use the `SentenceTransformerSpellCorrector` class to correct misspelled words within sentences:
 
 ```python
-corrector = SentenceTransformerSpellCorrector()
-corrected_sentence = corrector.correct(sentence)
+sentence='sample query'
+corrector = POC()
+corrected_sentence = corrector.did_you_mean(sentence)
 ```
 
 The `sentence` parameter should be a string representing the input sentence with possible misspelled words. The `correct` method will return the corrected sentence.
@@ -53,8 +54,8 @@ The `sentence` parameter should be a string representing the input sentence with
 
 You can configure the correction algorithm by modifying the settings in the `config.txt` file. Some available options include:
 
-- `TOP_n`: Maximum number of correction suggestions to provide for each misspelled word.
-- `threshold`: Maximum edit distance per word required for a correction suggestion to be considered valid.
+- `TOP_n`: Maximum number of correction suggestions output for each input sentence.
+- `threshold`: Maximum edit-distance per word required for a correction suggestion to be considered valid.
 - `LANGUAGE_MODEL`: Pre-trained language model to use for spell correction.
 
 Feel free to adjust these settings based on your specific requirements.
@@ -76,7 +77,7 @@ We would like to express our gratitude to the following contributors for their v
 
 ## Contact
 
-For any questions or inquiries, please contact me at ``.
+For any questions or inquiries, please contact me at `somyaupadyay@gmail.com`.
 
 ---
 
