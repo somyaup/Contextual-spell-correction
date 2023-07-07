@@ -1,0 +1,18 @@
+{
+    "preprocess": {
+        "input": "../data/flipkart_com-ecommerce_sample.csv",
+        "output": "../data/FKcatalog_dict.txt"
+    },
+    "driver": {
+        "model":"../model/cc.en.300.bin",
+        "model options":["../model/pytorch_model.bin","../model/cc.en.300.bin"],
+        "dictionary": "../data/dictionary.txt",
+        "metrics_data": "../metrics/example.csv",
+        "threshold": 2,
+        "topn": 25,
+        "tags":["commerce","shopping","buy","cost"]
+    },
+    "log": {
+        "log_file": "../logs/logs.txt"
+    }
+}
