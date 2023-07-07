@@ -51,10 +51,10 @@ The `sentence` parameter should be a string representing the input sentence with
 
 ## Configuration
 
-You can configure the correction algorithm by modifying the settings in the `config.py` file. Some available options include:
+You can configure the correction algorithm by modifying the settings in the `config.txt` file. Some available options include:
 
-- `TOP_K`: Maximum number of correction suggestions to provide for each misspelled word.
-- `MIN_SIMILARITY`: Minimum similarity score required for a correction suggestion to be considered valid.
+- `TOP_n`: Maximum number of correction suggestions to provide for each misspelled word.
+- `threshold`: Maximum edit distance per word required for a correction suggestion to be considered valid.
 - `LANGUAGE_MODEL`: Pre-trained language model to use for spell correction.
 
 Feel free to adjust these settings based on your specific requirements.
@@ -72,13 +72,11 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 ## Acknowledgements
 
 We would like to express our gratitude to the following contributors for their valuable contributions to this project:
-
-- John Doe (@johndoe)
-- Jane Smith (@janesmith)
+- HCL SW 
 
 ## Contact
 
-For any questions or inquiries, please contact us at `spellcorrection@example.com`.
+For any questions or inquiries, please contact me at ``.
 
 ---
 
